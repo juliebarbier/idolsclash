@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IDOLS CLASH - A cardgame about K-Pop</title>
+  <meta content="Discover how the game works and submit for news" name="description">
+  <meta content="boardgame, tabletop game, cardgame, K-Pop, idols" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .navmenu a:hover, .navmenu .active  {
+      color: #ca4095!important;
+    }
+    .call-to-action .cta-btn:hover {
+      background: #ca4095!important;
+      border: 2px solid #ca4095!important;
+    }
+    .services .service-item .title a:hover {
+      color: #ca4095!important;
+    }
+
+    .section-title h2:before, .section-title h2:after {
+          background: #ca4095!important;
+      }
+    .section-title h2:before, .section-title h2:after {
+        background: #ca4095!important;
+    }
+    #sib-container input:-ms-input-placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  
+    #sib-container input::placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  
+    #sib-container textarea::placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+  <!-- ========================================================
+  * Template Name: Append
+  * Updated: Jun 01 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0CNHE1Y3W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0CNHE1Y3W');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5H2T8NQ7');</script>
+    <!-- End Google Tag Manager -->
+
+  
+  <!-- Facebook -->
+  <meta name="facebook-domain-verification" content="twikbwk816nrpcs3cqreq8iolk8rxw" />
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '800555411559688');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=800555411559688&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Clarity Monitoring-->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "f7n3y3g83m");
+  </script>
+
+  <!-- Reddit Pixel -->
+  <script>
+  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_div2ddzswulg', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
+  </script>
+  <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+  <!-- End Reddit Pixel -->
+
+  
+  
+</head>
+
+<body class="index-page">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H2T8NQ7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Header ======= -->
+  <header class="header d-flex align-items-center sticky-top" id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html">
+
+        <h1 class="text-dark font-weight-bolder">IDOLS CLASH</h1>
+        <!-- <span>.</span> -->
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <a href="https://idolsclash.com/" class="btn-getstarted fw-bold text-uppercase" style="background-color: #ca4095; border: 0;">Support the project</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+        <!-- Features Section - Home Page -->
+        <section id="project" class="features">
+
+          <!-- Features Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <div class="row gy-4 justify-content-center features-item">
+              <div class="col-lg-9 order-2 order-lg-1">
+                <h2 class="display-2">How to buy and support the game</h2>
+                <p class="lead"> We have decided to bring our product to life through a <b>Kickstarter campaign</b>. By launching on this platform, we aim to gather the necessary support and funding from the community. If we reach <b>our goal of 10,000 euros</b>, the project will transition from a mere concept to a tangible product</p>
+                
+              </div>
+            </div>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row gy-4 align-items-stretch features-item " id="trekking">
+              <div class="col-lg-3 d-flex align-items-center " data-aos="zoom-out">
+                <img src="assets/img/IC-preview-packaging.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                <h4 class="mb-3">STEP 01</h4>
+                <h3>Go to the  <a href="https://www.kickstarter.com/projects/42gamesproject/idols-clash"  target="blank" >Kickstarter page</a> of the project and Click on "Notify me on the launch"</h3>
+                <p class="lead">To stay informed about the launch of our Kickstarter campaign, it's important to pre-register on Kickstarter. By doing so, you'll receive notifications and updates as soon as our campaign goes live.
+                  </p>
+                  <a href="https://www.kickstarter.com/projects/42gamesproject/idols-clash" target="blank" class="mt-3 btn btn-get-started btn-lg align-self-start text-uppercase" style="background-color: #ca4095; color: #fff; border: 0; font-weight: bold;">Support on Kickstarter</a>
+
+              </div>
+            </div><!-- Features Item -->
+            <div class="row gy-4 align-items-stretch features-item " id="trekking">
+              <div class="col-lg-3 d-flex align-items-center " data-aos="zoom-out">
+                <img src="assets/img/IC-preview-packaging.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                <h4 class="mb-3">STEP 02</h4>
+                <h3>Pledge the game when the campaign is open</h3>
+                <p class="lead">Once logged in, navigate to the campaign page you want to support. Click the "Back this project" button, which will take you to a page where you can choose your pledge amount and select a reward tie.<br> <br><b>Here, you can select between the Standard, Deluxe, or Art Collector editions of the game</b>. Choose your favourite and esclusive game!
+                  </p>
+              </div>
+            </div><!-- Features Item -->
+            <div class="row gy-4 align-items-stretch features-item " id="trekking">
+              <div class="col-lg-3 d-flex align-items-center " data-aos="zoom-out">
+                <img src="assets/img/IC-preview-packaging.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                <h4 class="mb-3">STEP 03</h4>
+                <h3>Payment & crowdfunding</h3>
+                <p class="lead">Enter your payment information and review your pledge details. <br>Finally, confirm your pledge. <br>Your card will only be charged if the project reaches its funding goal.<br> By making a pledge, you're supporting the creator's vision and helping bring their project to life.
+                  </p>
+              </div>
+            </div><!-- Features Item -->
+            <div class="row gy-4 align-items-stretch features-item " id="trekking">
+              <div class="col-lg-3 d-flex align-items-center " data-aos="zoom-out">
+                <img src="assets/img/IC-preview-packaging.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center flex-column" data-aos="fade-up">
+                <h4 class="mb-3">ABOUT ME</h4>
+                <p class="lead">My name is Giulia Barbieri, and one day, after a severe burnout at work, I decided it was time to do something for myself. <br>I found myself dedicating my time to designing, testing, and figuring out how to bring the game idea in my head to life. This is the result of all my efforts and the support of many who believed in me.<br>
+                  So thank you so much for your help :)
+                  </p>
+              </div>
+            </div><!-- Features Item -->
+          </div>
+    
+        </section><!-- End Features Section -->
+
+
+    <!-- Services Section - Home Page -->
+    <section id="gameplay" class="services">
+
+    <div class="container">
+        <div class="row gy-4">
+
+        <img src="assets/img/banner-horizontal.jpg" alt="">
+
+        <div data-aos-delay="100" data-aos="fade-up" class="col-lg-6">
+            <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                <div>
+                    <h5>PLAYTEST THE PROTOTYPE</h5>
+                    <!-- HTML  -->
+                    <div class="sib-form" style="margin: 0; padding: 0;">
+                        <div id="sib-form-container" class="sib-form-container" style="margin: 0; padding: 0;">
+                        <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#661d1d; ">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                            </svg>
+                            <span class="sib-form-message-panel__inner-text">
+                                Your subscription could not be saved. Please try again.
+                            </span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#085229;">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                            </svg>
+                            <span class="sib-form-message-panel__inner-text">
+                                Your subscription has been successful.
+                            </span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div id="sib-container" class="sib-container--large sib-container--vertical" style="margin: 0; padding: 0;">
+                            <form id="sib-form" method="POST" action="https://c75691b9.sibforms.com/serve/MUIFAMHpZZxYJOXGfW05xLMbOghq9muXH7U4FCKNjVd_7UTKDPqagZRiUWrerllX3CR7GCOEw3yFv3ZvhWDWln4mE25POFMf3b0Q0UjwUOqF27HpzyZYHSuoYHi8J7e56eWlUMoDuvIsVL_aPCQFl37rtHd16sJxY04EZ9paqQPWWiawmIXoquMQJh_CpUnyn3mYufYgL5zkiKGW" data-type="subscription">
+                            <div style="padding:0;">
+                                <div class="sib-input sib-form-block" style="margin: 0; padding: 0;">
+                                <div class="form__entry entry_block">
+                                    <div class="form__label-row ">
+                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700;  color:#3c4858;" for="EMAIL" data-required="">Subscribe now and we’ll get in contact with you :)</label>
+                    
+                                    <div class="entry__field">
+                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                                    </div>
+                                    </div>
+                    
+                                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left;  color:#661d1d;">
+                                    </label>
+                                </div>
+                                </div>
+                            </div>
+                            <p class="description">We can share only 10 prototypes.<br>Please submit only if you really want to help us. </p>
+                            <div style="margin: 0; padding: 0;">
+                                <div class="sib-form-block" style="margin: 0; padding: 0;">
+                                <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; color:#FFFFFF; background-color:#ca4095; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                    </svg>
+                                    SUBSCRIBE FOR PLAYTESTING
+                                </button>
+                                </div>
+                            </div>
+                    
+                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                            <input type="hidden" name="locale" value="en">
+                            </form>
+                        </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+        <div data-aos-delay="200" data-aos="fade-up" class="col-lg-6">
+            <div class="service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+                <h5>PLAYTEST ONLINE</h5>
+                <h4 class="title"><a class="stretched-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907440219&searchtext=idols" target="blank" >Support the project on Steam </a></h4>
+                <p class="description">If you want to playtest the game online <br> you can download a preview on Steam. 
+                <br>Let us know what you think about the project in the comments</p>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907440219&searchtext=idols"  target="blank"  class="mt-3 btn btn-get-started align-self-start text-uppercase" style="background-color: #ca4095; border: 0; font-weight: bold; color: #fff;">Play on Tabletop simulator</a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    </section><!-- End Services Section -->
+
+
+    <!-- Call-to-action Section - Home Page -->
+    <section id="join" class="call-to-action">
+
+      <img src="assets/img/idols-banner.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-7">
+            <div class="text-center">
+              <h3  data-aos="fade-up" data-aos-delay="100">Do you want to be notify on the project?</h3>
+              <a href="https://www.kickstarter.com/projects/42gamesproject/idols-clash" target="blank" class="mt-3 btn btn-get-started btn-lg align-self-start text-uppercase" style="background-color: #ca4095; color: #fff; border: 0; font-weight: bold;">Follow on Kickstarter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="background-color: #fff; padding-bottom: 0px;">
+
+    <div class="container footer-top">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-2 col-md-12 footer-about text-center">
+         
+          <h4>Created by</h4>
+        </div>
+
+        <div class="col-lg-5 col-12 footer-links text-center">
+          <a href="https://www.42games.it/" target="blank"><img src="assets/img/logo-42games.png" alt="" width="50%"></a>
+        </div>
+
+        <div class="col-lg-2 col-12 footer-links text-center">
+          <h4>Supported by</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center">
+          <a href="https://lunaroakstudio.com/" target="blank"><img src="assets/img/logo-lunaroak.png" class="" alt="" width="30%"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> 2023<strong class="px-1">42 Games Project</strong> <span>All Rights Reserved</span></p>
+      <div class="social-links d-flex mt-2 align-items-center justify-content-center">
+        <a href="https://www.facebook.com/42gamesproject" target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/42gamesproject/" target="blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+        window.LOCALE = 'en';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+        window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+        window.translation = {
+        common: {
+            selectedList: '{quantity} list selected',
+            selectedLists: '{quantity} lists selected'
+        }
+        };
+
+        var AUTOHIDE = Boolean(0);
+    </script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+</body>
+
+</html>

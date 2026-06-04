@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IDOLS CLASH</title>
+  <meta content="A strategic cardgame about K-Pop music" name="description">
+  <meta content="boardgame, tabletop game, cardgame, K-Pop, idols" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .navmenu a:hover, .navmenu .active  {
+      color: #ca4095!important;
+    }
+    .call-to-action .cta-btn:hover {
+      background: #ca4095!important;
+      border: 2px solid #ca4095!important;
+    }
+    .services .service-item .title a:hover {
+      color: #ca4095!important;
+    }
+
+    .section-title h2:before, .section-title h2:after {
+          background: #ca4095!important;
+      }
+    .section-title h2:before, .section-title h2:after {
+        background: #ca4095!important;
+    }
+    #sib-container input:-ms-input-placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  
+    #sib-container input::placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  
+    #sib-container textarea::placeholder {
+      text-align: left;
+      color: #777777;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+  <!-- ========================================================
+  * Template Name: Append
+  * Updated: Jun 01 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0CNHE1Y3W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0CNHE1Y3W');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5H2T8NQ7');</script>
+  <!-- End Google Tag Manager -->
+
+  
+  <!-- Facebook -->
+  <meta name="facebook-domain-verification" content="twikbwk816nrpcs3cqreq8iolk8rxw" />
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '800555411559688');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=800555411559688&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Clarity Monitoring-->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "f7n3y3g83m");
+  </script>
+
+  <!-- Reddit Pixel -->
+  <script>
+  !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_div2ddzswulg', {"optOut":false,"useDecimalCurrencyValues":true,"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
+  </script>
+  <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+  <!-- End Reddit Pixel -->
+  
+</head>
+
+<body class="index-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H2T8NQ7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ======= Header ======= -->
+  <header class="header d-flex align-items-center sticky-top" id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html">
+
+        <h1><img src="assets/img/idols-logo.png" alt=""></h1>
+        <!-- <span>.</span> -->
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul class="float-right">
+          <li><a href="index.html#project" class="active">The project</a></li>
+          <li><a href="index.html#gamecomponents">Game Components</a></li>
+          <li><a href="index.html#gameplay">Gameplay</a></li>
+          <li><a href="index.html#join">Join us</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+      <a href="shop.html"  target="blank" class="btn-getstarted fw-bold text-uppercase" style="background-color: #ca4095; border: 0;">SHOP NOW </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- Hero Section - Home Page -->
+    <section id="hero" class="hero">
+
+      <img src="assets/img/idols-banner.jpg" alt="">
+
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+          <div class="row text-center justify-content-center align-items-center">
+            <div class="col-lg-7 justify-content-center">
+              <h1 class="display-2 text-white fw-bolder text-uppercase" data-aos="fade-up" data-aos-delay="100">Idols Clash</h1>
+              <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">A cardgame about K-Pop</h2>
+              
+             <!--  <p data-aos="fade-up" data-aos-delay="250"> We have decided to bring our product to life through a <b>Kickstarter campaign</b>. By launching on this platform, we aim to gather the necessary support and funding from the community. If we reach <b>our goal of 10,000 euros</b>, the project will transition from a mere concept to a tangible product</p>--> 
+              <h4 data-aos="fade-up" data-aos-delay="280" class="mt-3">Want to know more about the game?</h4>
+            <!--   <a href="https://www.kickstarter.com/projects/42gamesproject/idols-clash" target="blank" class="mt-3 btn btn-get-started btn-lg align-self-start text-uppercase" style="background-color: #ca4095; color: #fff; border: 0; font-weight: bold;">Support on Kickstarter</a>
+              <a href="how-it-works.html"  class="mt-3 btn btn-default btn-lg align-self-start text-uppercase" style="background-color: #fff; color: #ca4095; border: 0; font-weight: bold;">How to support</a> -->
+            
+              <div class="align-self-center">
+                <a href="https://42gamesproject.substack.com/" target="blank" >
+                <form action="https://42gamesproject.substack.com/"  target="blank" class="sign-up-form d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                  <input type="text" class="form-control" placeholder="Enter your email">
+                  <input type="submit" class="btn btn-primary" value="Subscribe" style="background-color: #ca4095;">
+                </form>
+                </a>
+                <p data-aos="fade-up" data-aos-delay="350">Subscribe to our newsletter to follow our next steps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Hero Section -->
+
+    <!-- Features Section - Home Page -->
+    <section id="project" class="features">
+
+      <!-- Features Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <div class="row gy-4 justify-content-center features-item">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h2 class="display-2">The Project</h2>
+            
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-stretch justify-content-between features-item " id="trekking">
+          <div class="col-lg-6 d-flex align-items-center " data-aos="zoom-out">
+            <img src="assets/img/IC-preview-packaging.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+            <h4 class="mb-3">ABOUT</h4>
+            <h3>Create the best K-Pop groups and climb the world music charts</h3>
+            <p class="lead">Become the manager of your favorite K-Pop group!<br>
+              Challenge other players to <b>musical duels</b> and make your group rise to the <b>top of the charts.</b> <br>
+              But watch out for the <b>secrets behind the fame</b>! 
+              </p>
+             
+              <div class="d-flex justify-content-between" style="max-width: 300px;">
+                <span class="lead fw-bold">2-4 players</span> 
+                <span class="lead fw-bold">|</span> 
+                <span class="lead fw-bold ">30 min</span>
+                <span class="lead fw-bold">|</span> 
+                <span class="lead fw-bold">14+</span>
+              </div>
+            <a href="shop.html" target="blank" class="mt-3 btn btn-get-started align-self-start text-uppercase" style="background-color: #ca4095; border: 0; font-weight: bold;">SHOP NOW </a>
+            <p class="lead mt-4">Available in   <a href="./download/IdolsClash-RulesBook-ITA.pdf" target="_blank"><img src="assets/img/ita.png" alt="" width="50"></a> | <a href="./download/IdolsClash-RulesBook-EN.pdf" target="_blank"><img src="assets/img/en.jpg" alt="" width="50"></a>
+              </p>
+          </div>
+        </div><!-- Features Item -->
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <section id="stats" class="stats" style="min-height: 650px;">
+      <img src="assets/img/idols-preview-01.jpg" alt="" data-aos="fade-in">
+      
+    </section><!-- End Stats Section -->
+
+    <!-- Portfolio Section - Home Page -->
+    <section id="gamecomponents" class="portfolio">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Game Components</h2>
+        <p class="lead mb-4">Discover more then 120 illustrated cards</p>
+        <img src="assets/img/IC-preview-box.jpg" class="img-fluid" alt="">
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-box">Box</li>
+            <li data-filter=".filter-cards">Cards</li>
+            <li data-filter=".filter-gameplay">Gameplay</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-box">
+              <img src="assets/img/IC-preview-box-04.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-box-04.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-box">
+              <img src="assets/img/IC-preview-box-02.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-box-02.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-box">
+              <img src="assets/img/IC-preview-box-03.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cards</h4>
+                <p>Idols Clash cards</p>
+                <a href="assets/img/IC-preview-box-03.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gameplay">
+              <img src="assets/img/IC-preview-gameplay-01.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-gameplay-01.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-box">
+              <img src="assets/img/IC-standard-version.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-standard-version.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-box">
+              <img src="assets/img/IC-deluxe-version.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-deluxe-version.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gameplay">
+              <img src="assets/img/IC-preview-gameplay-02.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cards</h4>
+                <p>Idols Clash cards</p>
+                <a href="assets/img/IC-preview-gameplay-02.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gameplay">
+              <img src="assets/img/idols-gallery-05.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gameplay</h4>
+                <p>Idols Clash gameplay</p>
+                <a href="assets/img/idols-gallery-05.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gameplay">
+              <img src="assets/img/idols-gallery-06.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Gameplay</h4>
+                <p>Idols Clash gameplay</p>
+                <a href="assets/img/idols-gallery-06.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+              <img src="assets/img/IC-preview-card-04.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-card-04.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+              <img src="assets/img/IC-preview-card-02.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-card-02.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-cards">
+              <img src="assets/img/IC-preview-card-03.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Box</h4>
+                <p>Idols Clash game</p>
+                <a href="assets/img/IC-preview-card-03.jpg" title="Idols Clash game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+  
+    <section id="stats" class="stats" style="min-height: 650px;">
+      <img src="assets/img/idols-preview-02.jpg" alt="" data-aos="fade-in">
+      
+    </section><!-- End Stats Section -->
+
+    <!-- Services Section - Home Page -->
+    <section id="gameplay" class="services">
+
+      <!-- Services Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How to play</h2>
+        <p class="lead mb-5">Setup and gameplay</p>
+        <img src="assets/img/idols-gameplay.jpg" alt="" width="100%">
+        <div class="">
+          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907440219&searchtext=idols" class="btn btn-get-started btn-lg text-uppercase" style="background-color: #ca4095; border: 0; font-weight: bold; color: #fff;">Playtest on tabletop</a>
+          <a href="./download/IdolsClash-RulesBook-EN.pdf" target="blank" class="btn btn-lg text-uppercase" style="border-color: #ca4095; color: #ca4095!important;">EN RuleBook</a>
+          <a href="./download/IdolsClash-RulesBook-ITA.pdf" target="_blank" class="btn btn-lg text-uppercase" style="border-color: #ca4095; color: #ca4095!important;">ITA RuleBook</a>
+        </div>
+
+        <h2 class="mt-5">Collect idols and create groups</h2>
+        <p class="lead mb-5">48 idols cards inspired by the K-pop imaginary</p>
+        <img src="assets/img/idols-cards.png" alt="" width="100%">
+        <img src="assets/img/idols-super-cards.jpg" alt="" width="100%">
+        <p class="lead mb-5 mt-5">Defend, attack or simply boost the performance of your groups, by matching event cards with idol cards.</p>
+        <img src="assets/img/idols-cards-event.jpg" alt="" width="100%">
+      </div><!-- End Section Title -->
+
+      <!-- <div class="container-fluid">
+        <img src="assets/img/idols-footer.jpg" alt="" style="width: 100%;">
+      </div> -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-6">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h5>PLAYTEST THE GAME</h5>
+                <h4 class="title"><a class="stretched-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907440219&searchtext=idols" target="blank" >Steam Version </a></h4>
+                <p class="description">If you want to playtest the game, you can subscribe on Steam. 
+                  <br>Let us know what you think about the project </p>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907440219&searchtext=idols"  target="blank"  class="mt-3 btn btn-get-started align-self-start text-uppercase" style="background-color: #ca4095; border: 0; font-weight: bold; color: #fff;">Play on Tabletop</a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos-delay="200" data-aos="fade-up" class="col-lg-6">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h5>NEWS & EVENTS</h5>
+                <h4 class="title"><a class="stretched-link" href="https://www.instagram.com/valleyhoopers_boardgame/" target="blank" >Partnership with 
+Pick 'N' Roll Games Lab</a></h4>
+                <p class="description">We are delighted to be part of this project. </p>
+                <a href="https://www.instagram.com/valleyhoopers_boardgame/" target="blank"  class="mt-3 btn btn-get-started align-self-start text-uppercase" style="background-color: #ca4095; border: 0; font-weight: bold; color: #fff;">Discover</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+
+
+    <!-- Call-to-action Section - Home Page -->
+     
+    <section id="join" class="call-to-action">
+
+      <img src="assets/img/idols-banner.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9">
+            <div class="text-center">
+             <!-- <h3>Want to know more about the game and its launch?</h3>
+              <div class="align-self-center">
+                <div class="sib-form" style="text-align: center; background-color:transparent;">
+                  <div id="sib-form-container" class="sib-form-container">
+                    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#661d1d; background-color:transparent; border-radius:3px; border-color:#ff4949; max-width:640px;">
+                      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                        </svg>
+                        <span class="sib-form-message-panel__inner-text">
+                            Your subscription can&#039;t be validated.
+                        </span>
+                      </div>
+                    </div>
+                  <div></div>
+                  <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#085229; background-color:transparent;border-radius:3px; border-color:#13ce66;max-width:640px;">
+                    <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                      <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                        <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                      </svg>
+                      <span class="sib-form-message-panel__inner-text">
+                        Your subscription has been sent successfully
+                      </span>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent; max-width:640px; direction:ltr">
+                      <form id="sib-form" method="POST" action="https://c75691b9.sibforms.com/serve/MUIFAOolKmV7MWKOf0JNrUXXyw3owDZEUZOEzwLKbdw6STz-_5v3hPsmSZX1ZBo8FW92MatjFHDvQkc4nfqZ0mT-Fj0AkZI-Jh8WwWK7UVYAUkjmvkQ7tLVWpzJSzT_-T06fv-bUcLhW0Wzo-bCdcZdv51QY1YtVi7a1q32G7KQbzCbbPpmu5z0kf6VJsud_Phco0sPw8fTodBeB" data-type="subscription">
+                      <div style="padding: 8px 0;">
+                        <div class="sib-input sib-form-block">
+                          <div class="form__entry entry_block">
+                            <div class="form__label-row ">
+
+                              <div class="entry__field">
+                                <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your email" data-required="true" required style="font-size: large; padding: 5px 15px; color:#ca4095;"/>
+                              </div>
+                            </div>
+
+                            <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left;  color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                            </label>
+                            <label class="entry__specification" style="font-size:18px; text-align:center; color:#fff;">
+                              Notify me on the launch
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="padding: 8px 0;">
+                        <div class="sib-form-block" style="text-align: center">
+                          <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; color:#FFFFFF; background-color:#ca4095; border-radius:6px; border-width:0px;" form="sib-form" type="submit">
+                            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                              <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                            </svg>
+                            SUBSCRIBE
+                          </button>
+                        </div>
+                      </div>
+                      <input type="text" name="email_address_check" value="" class="input--hidden">
+                      <input type="hidden" name="locale" value="it">
+                      </form>
+                    </div>
+                  </div> -->
+                  <h4 data-aos="fade-up" data-aos-delay="280" class="mt-3">Do you like the game?</h4>
+                  <a href="shop.html" target="blank" class="mt-3 btn btn-get-started btn-lg align-self-start text-uppercase" style="background-color: #ca4095; color: #fff; border: 0; font-weight: bold;">SHOP NOW</a>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Call-to-action Section -->
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="background-color: #fff; padding-bottom: 0px;">
+
+    <div class="container footer-top">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-2 col-md-12 footer-about text-center">
+         
+          <h4>Created by</h4>
+        </div>
+
+        <div class="col-lg-5 col-12 footer-links text-center">
+          <a href="https://www.42games.it/" target="blank"><img src="assets/img/logo-42games.png" alt="" width="50%"></a>
+        </div>
+
+        <div class="col-lg-2 col-12 footer-links text-center">
+          <h4>Supported by</h4>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center">
+          <a href="https://lunaroakstudio.com/" target="blank"><img src="assets/img/logo-lunaroak.png" class="" alt="" width="30%"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> 2023<strong class="px-1">42 Games Project</strong> <span>All Rights Reserved</span></p>
+      <div class="social-links d-flex mt-2 align-items-center justify-content-center">
+        <a href="https://www.facebook.com/42gamesproject" target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/42gamesproject/" target="blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = 'Scegli un prefisso paese';
+    window.LOCALE = 'it';
+    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information are not correct. Check the field and try again";
+  
+    window.REQUIRED_ERROR_MESSAGE = "This field is required ";
+  
+    window.GENERIC_INVALID_MESSAGE = "The information are not correct. Check the field and try again";
+
+    window.translation = {
+      common: {
+        selectedList: '{quantity} lista selezionata',
+        selectedLists: '{quantity} liste selezionate'
+      }
+    };
+  
+    var AUTOHIDE = Boolean(0);
+  </script>
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+</body>
+
+</html>
